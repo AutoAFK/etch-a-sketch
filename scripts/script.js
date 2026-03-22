@@ -12,11 +12,6 @@ function setup() {
                 target.classList.toggle('hover-effect');
             });
 
-            square.addEventListener('mouseleave', (e) => {
-                const target = e.target;
-                target.classList.toggle('hover-effect')
-            })
-
             app.appendChild(square);
         }
     }
