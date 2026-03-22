@@ -6,51 +6,50 @@
 }
 
 body {
-    padding: 50px;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 .user-modification {
-    font-size: 24px;
+    flex: 0 0 50px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap:10px;
 }
 
-.user-modification button {
-    font-size: inherit;
-    padding: 10px 20px;
-}
-
-.user-modification input {
-    width: 100px;
-    height: 50px;
+#squares-amount {
     background-color: transparent;
-    border: 2px solid black;
+    padding: 10px 20px;
     border-radius: 5px;
-    padding: 0px 1px;
-
+    font-size:22px;
 }
 
-#app {
-    flex: 0 0 auto;
+#color {
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex: 0 1 auto;
+    width: 960px;
+    margin: 20px auto;
 }
 
-.container div {
-    border: 1px solid #000;
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 500px;
 }
+
+#app div {
+    flex: 0 0 auto;
+    border: 1px solid black;
+}
+
 
 
 
