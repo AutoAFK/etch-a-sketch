@@ -3,23 +3,56 @@
     border-collapse: collapse;
     padding: 0;
     margin: 0;
+    gap:0;
+}
+
+body {
+    padding: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-modification {
+    flex: 1 0 150px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-modification button {
+    font-size: inherit;
+    padding: 10px 20px;
+}
+
+.user-modification input {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0px 1px;
+
+}
+
+#app {
+    flex: 2 1 960px;
+    max-width: 960px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .container div {
     border: 1px solid #000;
-    width: 50px;
-    height: 50px;
+    flex: 1 0 50px;
 }
 
-.hover-effect {
-    background-color: #000;
-}
-/* .container div:hover{
-    background-color: beige;
-} */
+
 
